@@ -25,7 +25,7 @@ Get and start rtp server
 ```bash
 $ git clone -b opencv-to-webrtc https://github.com/cartovarc/rtmp-to-webrtc.git
 $ cd rtmp-to-webrtc
-$ npm install
+$ npm install --python=python2
 $ npm start
 ```
 
