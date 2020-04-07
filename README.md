@@ -17,8 +17,15 @@
 
 ## Requirements (my env)
 - conda
-- npm 6.13.7
-- node v8.10.0
+- npm 5.6.0
+- node v8.10
+
+## With NVM
+if you use 'nvm'
+```bash
+$ nvm install 8.10
+$ nvm use 8.10
+```
 
 ## Instructions
 Get and start rtp server
