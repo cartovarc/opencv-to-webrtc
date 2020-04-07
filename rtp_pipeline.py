@@ -59,7 +59,8 @@ class RtpPipeline(object):
                     time.sleep(0.5)
                     continue
                 frame = cv2.resize(frame, (self.w, self.h), interpolation=cv2.INTER_AREA) # resized frame
-                cv2.imshow("TEST", frame)
+                cv2.putText(frame,'HELLO WORLD',(100,100), cv2.FONT_HERSHEY_SIMPLEX, 1,(255,0,0),2)
+		#cv2.imshow("TEST", frame)
                 data = frame.tostring()
                 buf = Gst.Buffer.new_allocate(None, len(data), None)
                 buf.fill(0, data)
